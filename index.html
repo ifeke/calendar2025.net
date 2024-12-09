@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the 2025 Calendar and plan your year. Learn about 2025 with insights into technology, news, culture, and more.">
+    <meta name="keywords" content="Calendar 2025, 2025 Events, Yearly Calendar 2025, Future 2025">
+    <meta name="author" content="calendar2025.net">
+    <title>Calendar 2025 | Calendar2025.net</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #51aaf3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .language-selector {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .language-selector div {
+            position: relative;
+        }
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .language-dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .language-dropdown a:hover {
+            background-color: #eee;
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .month {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            padding: 10px;
+        }
+        .month h3 {
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+            background-color: #51aaf3;
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            font-size: 14px;
+        }
+        .day {
+            padding: 5px;
+        }
+        .weekdays {
+            font-weight: bold;
+            background-color: #eee;
+        }
+        .weekdays:nth-child(1),
+        .day:nth-child(7n+1) {
+            color: red;
+        }
+        footer {
+            background-color: #51aaf3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer div {
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .month {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.month:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+.day {
+    padding: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+.day:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 5px 2px rgba(128, 128, 128, 0.5); 
+    border-radius: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Calendar 2025</h1>
+    <div class="language-selector">
+        <div onclick="toggleDropdown()">Language ▼</div>
+        <div class="language-dropdown" id="dropdown">
+            <a href="https://calendar2025.net">English</a>
+            
+        </div>
+    </div>
+</header>
+<main>
+<div class="calendar" id="calendar"><div class="month"><h3>January 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>February 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div></div></div><div class="month"><h3>March 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>April 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div></div></div><div class="month"><h3>May 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>June 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div></div></div><div class="month"><h3>July 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>August 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>September 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div></div></div><div class="month"><h3>October 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div><div class="month"><h3>November 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div></div><div></div><div></div><div></div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div></div></div><div class="month"><h3>December 2025</h3><div class="days"><div class="day weekdays">Sun</div><div class="day weekdays">Mon</div><div class="day weekdays">Tue</div><div class="day weekdays">Wed</div><div class="day weekdays">Thu</div><div class="day weekdays">Fri</div><div class="day weekdays">Sat</div><div></div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div></div></div></div>
+</main>
+<footer>
+    <div>
+        <p>The year 2025 promises to be a landmark year in technology, culture, and global events. Advances in artificial intelligence and renewable energy are expected to shape the future, while breakthroughs in healthcare and space exploration bring humanity closer to its dreams. Cultural festivals and global sports events will unite the world in celebration. Let the 2025 Calendar guide you through an extraordinary year full of hope and opportunities.</p>
+    </div>
+</footer>
+<script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    function changeLanguage(lang) {
+        if (lang === "zh") {
+            alert("切换到中文需要重新加载页面内容。");
+        } else {
+            alert("Switched to English.");
+        }
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.language-selector div')) {
+            document.getElementById("dropdown").style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
